@@ -1,0 +1,83 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+body{
+  font-family: 'Kiwi Maru', serif;
+  text-align: center;
+  margin-top: 80px;
+}
+
+// header
+.icon_size{
+  height: 45px;
+  width: auto;
+  color: rgb(172, 128, 47);
+}
+
+.nav-item{
+  font-family: 'Kiwi Maru', serif;
+}
+.nav-item:hover{
+  font-family: 'Kiwi Maru', serif;
+  background-color: rgb(255, 217, 127);
+}
+// header-humberger
+.navbar-light .navbar-toggler{
+  outline: none;
+  border: none;
+  opacity: 0.8;
+}
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-toggler-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: none;
+  appearance: none;
+  cursor: pointer;
+  &,
+  span {
+    display: inline-block;
+    transition: all 0.3s;
+    box-sizing: border-box;
+  }
+  span {
+    position: absolute;
+    left: 5px;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(165, 165, 165, 1);
+    border-radius: 1px;
+    &:nth-of-type(1) {
+      top: 7px;
+    }
+    &:nth-of-type(2) {
+      top: 17px;
+    }
+    &:nth-of-type(3) {
+      top: 27px;
+    }
+  }
+}
+.navbar-toggler[aria-expanded='true'] {
+  span.navbar-toggler-icon {
+    span {
+      &:nth-of-type(1) {
+        transform: translateY(10px) rotate(-315deg);
+      }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+      &:nth-of-type(3) {
+        transform: translateY(-10px) rotate(315deg);
+      }
+    }
+  }
+}
+// header-end
