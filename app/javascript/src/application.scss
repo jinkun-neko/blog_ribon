@@ -1,25 +1,32 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
+// all
+.container_0{
+  padding: 0;
+  margin: 0;
+}
+
 body{
   font-family: 'Kiwi Maru', serif;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 60px;
+  color: #272343;
+  background-color: #fffffe;
 }
 
 // header
 .icon_size{
   height: 45px;
   width: auto;
-  color: rgb(172, 128, 47);
+  filter: invert(15%) sepia(99%) saturate(8044%) hue-rotate(247deg) brightness(100%) contrast(200%);
 }
-
 .nav-item{
   font-family: 'Kiwi Maru', serif;
 }
 .nav-item:hover{
   font-family: 'Kiwi Maru', serif;
-  background-color: rgb(255, 217, 127);
+  background-color: #ffd803;
 }
 // header-humberger
 .navbar-light .navbar-toggler{
@@ -81,3 +88,31 @@ body{
   }
 }
 // header-end
+
+//index-start
+.img-fluid{
+  width: 100%;
+  height: auto;
+}
+.container_1{
+  width: 100%;
+  height: auto;
+  padding: 50px 50px;
+  text-align: center;
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(70, 69, 97);
+}
+.container_2{
+  width: 100%;
+  height: auto;
+  padding: 70px 70px;
+  margin: -20px 0 -10px 0;
+  background-color: #e3f6f5;
+  color: rgb(70, 69, 97);
+}
+  //card-start
+  //card-end
+
+//index-end
+
